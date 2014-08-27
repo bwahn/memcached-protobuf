@@ -1,12 +1,12 @@
 Name:           memcached
-Version:        @VERSION@
-Release:        @RELEASE@%{?dist}
+Version:        1.4.20
+Release:        1%{?dist}
 Summary:        High Performance, Distributed Memory Object Cache
 
 Group:          System Environment/Daemons
 License:        BSD
 URL:            http://memcached.org
-Source0:        http://memcached.org/files/%{name}-@FULLVERSION@.tar.gz
+Source0:        http://memcached.org/files/%{name}-1.4.20.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:  libevent-devel
@@ -23,7 +23,7 @@ system, generic in nature, but intended for use in speeding up dynamic
 web applications by alleviating database load.
 
 %prep
-%setup -q -n %{name}-@FULLVERSION@
+%setup -q -n %{name}-1.4.20
 
 
 %build
